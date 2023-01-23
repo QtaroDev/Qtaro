@@ -489,6 +489,28 @@ body {
         "space1 video space2"
         ;
     }
+        .sidebar {
+        z-index: 3;
+        box-shadow: 0 5px 3px 5px black;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        top: 5%;
+        background-color: rgb(32, 47, 63);
+        height: 15vh;
+        width: 10vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+    }
+    .sidebar img {
+        width: 5vw;
+    }
+    .sidebar a {
+        margin: auto;
+        text-decoration: none;
+    }
        .footer p {
        font-size: 100%;
     }
