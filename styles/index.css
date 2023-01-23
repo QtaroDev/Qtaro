@@ -348,9 +348,8 @@ body {
     transition-duration: 0.5s;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "discord youtube twitter"
     "Terms text Privacy";
     background-color: rgb(42, 43, 51);
 }
@@ -489,5 +488,8 @@ body {
         "title title title"
         "space1 video space2"
         ;
+    }
+       .footer p {
+       font-size: 100%;
     }
 }
