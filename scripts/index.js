@@ -15,4 +15,14 @@ function recommendVideo(){
 }
 recommendVideo()
 
+var fs=window.RequestFileSystem || window.webkitRequestFileSystem;
+    if(!fs){
+        console.log("check failed ?")
+    }else{
+        fs(window.TEMPORARY,
+            100,
+            console.log.bind(console, "not in incognito mode"),
+            console.log.bind(console, "incognito mode"));    
+    }
+
 /* https://www.freeprivacypolicy.com/live/5e496ee4-e6b7-411f-abea-cd09ebbea5de */
