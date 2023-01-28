@@ -15,14 +15,17 @@ function recommendVideo(){
 }
 recommendVideo()
 
-var fs=window.RequestFileSystem || window.webkitRequestFileSystem;
-    if(!fs){
-        console.log("check failed ?")
-    }else{
-        fs(window.TEMPORARY,
-            100,
-            console.log.bind(console, "not in incognito mode"),
-            console.log.bind(console, "incognito mode"));    
-    }
+if ('storage' in navigator && 'estimate' in navigator.storage) {
+    const {usage, quota} = await navigator.storage.estimate();
+    console.log(`Using ${usage} out of ${quota} bytes.`);
+
+    if(quota < 120000000){
+        console.log('Incognito')
+    } else {
+        console.log('Not Incognito')
+    }   
+} else {
+    console.log('Can not detect')
+}
 
 /* https://www.freeprivacypolicy.com/live/5e496ee4-e6b7-411f-abea-cd09ebbea5de */
