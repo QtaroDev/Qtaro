@@ -33,7 +33,9 @@ function ok(){
     input[i].style.pointerEvents="fill";
   }
 }
-var _0xba8b=[];let m6Fo9x074eL
+
+var _0x5ba8=["\x64\x62\x73\x62\x33\x32\x37\x32"];let m6Fo9x074eL=_0x5ba8[0]
+
 function submitForm(){
     /*check if duration between the last message sent is long enough*/
     appactionDate = localStorage.getItem("appactionDate");
