@@ -6,8 +6,8 @@ function recommendVideo(){
         video.style.display="none"
     }
     let videoNumber = Math.floor((Math.random()*23)+1);
-    let id = "video"+videoNumber;
     videoNumber = String(videoNumber);
+    let id = "video"+videoNumber;
     console.log(id)
     document.getElementById(id).style.display="grid";
     document.getElementById(id).style.gridArea="video";
