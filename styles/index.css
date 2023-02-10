@@ -234,7 +234,6 @@ body {
     border-radius: 4px;
     overflow: hidden;
     transition-duration: 0.3s;
-    margin-bottom: 5%;
 }
 .videoYBA:hover {
     box-shadow: 0px 0px 10px 3px rgb(45, 128, 24);
@@ -275,7 +274,6 @@ body {
     border-radius: 4px;
     overflow: hidden;
     transition-duration: 0.3s;
-    margin-bottom: 5%;
 }
 .videoAUT:hover {
     box-shadow: 0px 0px 10px 3px rgb(45, 128, 24);
@@ -316,7 +314,6 @@ body {
     border-radius: 4px;
     overflow: hidden;
     transition-duration: 0.3s;
-    margin-bottom: 5%;
 }
 .videoRIU:hover {
     box-shadow: 0px 0px 10px 3px rgb(45, 128, 24);
