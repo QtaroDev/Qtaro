@@ -1,11 +1,11 @@
 
 function recommendVideo(){
-    for(let i=1; i<23; i++){
+    for(let i=1; i<24; i++){
         videoID = "video"+i;
         video = document.getElementById(videoID)
         video.style.display="none"
     }
-    let videoNumber = Math.floor((Math.random()*23)+1);
+    let videoNumber = Math.floor((Math.random()*22)+1);
     videoNumber = String(videoNumber);
     let id = "video"+videoNumber;
     console.log(id)
