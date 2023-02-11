@@ -1,6 +1,6 @@
 
 function recommendVideo(){
-    for(let i=1; i<24; i++){
+    for(let i=1; i<25; i++){
         videoID = "video"+i;
         video = document.getElementById(videoID)
         video.style.display="none"
