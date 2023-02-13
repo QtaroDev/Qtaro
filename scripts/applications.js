@@ -57,20 +57,26 @@ function submitForm(){
     let a3 = document.getElementById("a3").value;
     let a4 = document.getElementById("a4").value;
     let a5 = document.getElementById("a5").value;
+    let a6 = document.getElementById("a6").value;
+    let a7 = document.getElementById("a7").value;
+
     /* send discord message */
       const discordmsg = {
-        "content": "@here",
-        "embeds": [
-          {
-            "title": "A new user has applied for the moderator role!",
-            "description": "`Roblox Username :  "+RoUser+"`\n`Discord Username :  "+DiUser+"`\n**Q : Have you ever been assigned a moderator role in any servers? if so, name some.**\nA : "+a1+"\n**Q : Why should we assign you the moderator role?**\nA : "+a2+"\n**Q : How did you join Qtaro's discord server?**\nA : "+a3+"\n**Q : What do you think is a missing rule in Qtaro's server rules?**\nA : "+a4+"\n**Q : If you were stabbed with a strange arrow, what do you think will happen?**\nA : "+a5,
-            "color": null
-          }
-        ],
-        "username": "QHModApp",
-        "avatar_url": "https://cdn.discordapp.com/attachments/999063714969948251/1042187576683024474/circle.png",
-        "attachments": []
+  "content": "@here",
+  "embeds": [
+    {
+      "title": "A new user has applied for the Moderator role!",
+      "description": "```Roblox Username : "+RoUser+"```\n```Discord Username and tag : "+DiUser+"```\n***Q : How old are you?***\nA : "+a1+"\n***Q : Why did you join Qtaro's discord server?***\nA : "+a2+"\n***Q : What changes will you make to the server?***\nA : "+a3+"\n***Q : Have you ever been assigned a moderator role in any servers? if so, name some.***\nA :  "+a4+"\n***Q : Why should we assign you the moderator role?***\nA : "+a5+"\n***Q : What do you think is a missing rule in Qtaro's server rules?***\nA : "+a6+"\n***Q : If you were stabbed with a strange arrow, what do you think will happen?***\nA : "+a7,
+      "color": 6542105,
+      "footer": {
+        "text": "[From https://www.qtaro.tk]"
       }
+    }
+  ],
+  "username": "QHModApps",
+  "avatar_url": "https://cdn.discordapp.com/attachments/999063714969948251/1042187576683024474/circle.png",
+  "attachments": []
+}
       fetch(hook+"?wait=true", {"method":"POST", "headers":{"content-type":"application/json"}, "body":JSON.stringify(discordmsg)})
       console.log("Message sent successfully!");
       alert("Message sent successfully")
