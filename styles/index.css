@@ -50,7 +50,7 @@ body {
 #div3 {
 
     background-color: rgb(32, 54, 42);
-    margin: 0;
+    padding-bottom: 5%;
     height: max-content;
     width: 100%;
     display: grid;
